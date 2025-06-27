@@ -1,4 +1,4 @@
-# tipii
+# smapsl
  
 Template Name: Tempo
 Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
