@@ -12,6 +12,7 @@
   --light-theme-color: #FAFAFA;
   --white-theme-color: #FFFFFF;
   --grey-theme-color: #f6f4f4;
+  --dark-theme-color: rgba(0, 0, 0, 0.9);
 
   --main-font-color: #1F2328;
   --light-font-color: #FFFFFF;
@@ -109,7 +110,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--dark-theme-color);
   padding: 12px 0;
 }
 
@@ -481,39 +482,12 @@ section.alternate {
 # sponsors
 --------------------------------------------------------------*/
 .sponsors {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/cta-bg.jpg") center center;
-  background-size: cover;
   padding: 60px 0;
 }
 
-.sponsors h2 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.sponsors p {
-  color: #fff;
-}
-
-.sponsors .cta-btn {
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.sponsors .cta-btn:hover {
-  background: var(--main-theme-color);
-  border: 2px solid var(--main-theme-color);
+.sponsors-logo {
+  max-height: 100px;
+  margin: 8px;
 }
 
 @media (min-width: 1024px) {
@@ -527,16 +501,15 @@ section.alternate {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
   font-size: 20px;
-  color: var(--main-theme-color);
+  color: #fff;
   float: left;
   width: 44px;
   height: 44px;
-  background: #fff;
+  background: var(--main-theme-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -559,16 +532,8 @@ section.alternate {
   color: #816a6e;
 }
 
-.contact .info .email,
-.contact .info .phone {
+.contact .info .email {
   margin-top: 40px;
-}
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
-  background: var(--main-theme-color);
-  color: #fff;
 }
 
 @keyframes animate-loading {
@@ -581,57 +546,38 @@ section.alternate {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #f6f4f4;
-  margin-top: 67px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 50px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #655356;
-  content: "/";
-}
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #444444;
+  color: #fff;
   font-size: 14px;
-  background: #f6f4f4;
+  background: var(--dark-theme-color);
 }
 
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
-  color: #444444;
+}
+
+
+/*--------------------------------------------------------------
+# Table week
+--------------------------------------------------------------*/
+
+.table-week {
+  font-size: 0.9em;
+}
+
+.table-week th, .table-week tr, .table-week td {
+  border: dashed 1px #ccc;
+}
+
+.table-week .activity {
+  text-align: left;
+}
+
+.table-week .day {
+  width: 12%;
 }
