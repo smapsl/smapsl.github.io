@@ -17,8 +17,6 @@
   --main-font-color: #1F2328;
   --light-font-color: #FFFFFF;
 
-var(--main-theme-color)
-
 }
 
 /*--------------------------------------------------------------
@@ -468,13 +466,6 @@ ul.double-check  i {
   font-weight: 600;
 }
 
-
-@media (min-width: 1024px) {
-  .section-title p {
-    width: 50%;
-  }
-}
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -516,12 +507,6 @@ ul.double-check  i {
 .sponsors-logo {
   max-height: 100px;
   margin: 8px;
-}
-
-@media (min-width: 1024px) {
-  .sponsors {
-    background-attachment: fixed;
-  }
 }
 
 /*--------------------------------------------------------------
