@@ -414,6 +414,61 @@ section.alternate {
   font-weight: 600;
 }
 
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+ul.double-check {
+  list-style: none;
+  padding: 0;
+}
+
+ul.double-check  li {
+  padding-left: 28px;
+  position: relative;
+}
+
+ul.double-check  li+li {
+  margin-top: 10px;
+}
+
+ul.double-check  i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: var(--main-theme-color);
+  line-height: 1;
+}
+
+.calendar-title {
+  margin-top: 2em
+}
+
+.calendar-title i {
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: var(--main-theme-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.calendar-title span {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+
 @media (min-width: 1024px) {
   .section-title p {
     width: 50%;
@@ -423,33 +478,6 @@ section.alternate {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding-left: 28px;
-  position: relative;
-}
-
-.about .content ul li+li {
-  margin-top: 10px;
-}
-
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: var(--main-theme-color);
-  line-height: 1;
-}
 
 .about .content p:last-child {
   margin-bottom: 0;
@@ -568,6 +596,7 @@ section.alternate {
 
 .table-week {
   font-size: 0.9em;
+  text-wrap: nowrap;
 }
 
 .table-week th, .table-week tr, .table-week td {
