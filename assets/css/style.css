@@ -472,132 +472,164 @@ ul.double-check  i {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-
-.about .content p:last-child {
-  margin-bottom: 0;
+.message-info {
+  color: #C0392B;
+  display: block;
+  padding: 0.6em 0.8em;
+  border-radius: 5px;
+  margin-bottom: 1em;
 }
 
-.about .content .btn-learn-more {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
+
+
+.stabilo {
+  position: relative;
   display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.3s;
-  line-height: 1;
-  color: var(--main-theme-color);
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid var(--main-theme-color);
+  z-index: 0;
 }
 
-.about .content .btn-learn-more:hover {
-  background: var(--main-theme-color);
-  color: #fff;
-  text-decoration: none;
+.stabilo::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 30%;
+  bottom: 0;
+  background: rgba(255, 111, 174, 0.9);
+  transform: rotate(-1deg);
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0.7;
+  filter: blur(1px);
 }
 
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
 
-/*--------------------------------------------------------------
-# sponsors
---------------------------------------------------------------*/
-.sponsors {
-  padding: 60px 0;
-}
-
-.sponsors-logo {
-  max-height: 100px;
-  margin: 8px;
-}
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-}
-
-.contact .info i {
-  font-size: 20px;
-  color: #fff;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background: var(--main-theme-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #493c3e;
-}
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #816a6e;
-}
-
-.contact .info .email {
-  margin-top: 40px;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+  .about .content p:last-child {
+    margin-bottom: 0;
   }
 
-  100% {
-    transform: rotate(360deg);
+  .about .content .btn-learn-more {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: var(--main-theme-color);
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid var(--main-theme-color);
   }
-}
+
+  .about .content .btn-learn-more:hover {
+    background: var(--main-theme-color);
+    color: #fff;
+    text-decoration: none;
+  }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  color: #fff;
-  font-size: 14px;
-  background: var(--dark-theme-color);
-}
+  /*--------------------------------------------------------------
+  # sponsors
+  --------------------------------------------------------------*/
+  .sponsors {
+    padding: 60px 0;
+  }
 
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-}
+  .sponsors-logo {
+    max-height: 100px;
+    margin: 8px;
+  }
+
+  /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+  .contact .info {
+    width: 100%;
+  }
+
+  .contact .info i {
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: var(--main-theme-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #493c3e;
+  }
+
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #816a6e;
+  }
+
+  .contact .info .email {
+    margin-top: 40px;
+  }
+
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 
-/*--------------------------------------------------------------
-# Table week
---------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    color: #fff;
+    font-size: 14px;
+    background: var(--dark-theme-color);
+  }
 
-.table-week {
-  font-size: 0.9em;
-  text-wrap: nowrap;
-}
+  #footer .credits {
+    padding-top: 5px;
+    font-size: 13px;
+  }
 
-.table-week th, .table-week tr, .table-week td {
-  border: dashed 1px #ccc;
-}
 
-.table-week .activity {
-  text-align: left;
-}
+  /*--------------------------------------------------------------
+  # Table week
+  --------------------------------------------------------------*/
 
-.table-week .day {
-  width: 12%;
+  .table-week {
+    font-size: 0.9em;
+    text-wrap: nowrap;
+  }
+
+  .table-week th, .table-week tr, .table-week td {
+    border: dashed 1px #ccc;
+  }
+
+  .table-week .activity {
+    text-align: left;
+  }
+
+  .table-week .day {
+    width: 12%;
+  }
 }
