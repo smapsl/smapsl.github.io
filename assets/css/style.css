@@ -23,7 +23,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   color: #444444;
 }
 
@@ -35,15 +35,6 @@ a {
 a:hover {
   color: #ea6981;
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Nunito", sans-serif;
 }
 
 /*--------------------------------------------------------------
